@@ -23,19 +23,19 @@ run the application
 make run
 ```
 
-Create DB container
-```bash
-make docker-run
-```
-
-Shutdown DB container
-```bash
-make docker-down
-```
-
 live reload the application
 ```bash
 make watch
+```
+
+Build docker container
+```bash
+make docker-buil
+```
+
+Run docker container with live reload
+```bash
+make docker-run
 ```
 
 run the test suite
