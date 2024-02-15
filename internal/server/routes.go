@@ -7,7 +7,6 @@ import (
 )
 
 func (s *Server) RegisterRoutes() http.Handler {
-
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /", s.HelloWorldHandler)
 	return mux
@@ -15,7 +14,7 @@ func (s *Server) RegisterRoutes() http.Handler {
 
 func (s *Server) HelloWorldHandler(w http.ResponseWriter, r *http.Request) {
 	resp := make(map[string]string)
-	resp["message"] = "Hello World"
+	resp["message"] = "Hello World sss"
 
 	jsonResp, err := json.Marshal(resp)
 	if err != nil {

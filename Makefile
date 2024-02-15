@@ -40,13 +40,3 @@ watch:
 	fi
 
 .phony: all build run test clean
-
-docker-build:
-	@echo "building docker image..."
-	@docker build -t app .
-
-
-# run docker container with live reload
-docker-run:
-	@echo "running docker container..."
-	@docker run -p 8080:8080 -v $(shell pwd):/app app
